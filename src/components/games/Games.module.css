@@ -1,0 +1,201 @@
+/* ── Shared game shell ── */
+.gameCard {
+  background: rgba(237, 230, 218, 0.9);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  backdrop-filter: blur(4px);
+}
+.gameHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.gameEmoji { font-size: 28px; line-height: 1; }
+.gameSubtitle {
+  color: var(--color-text-muted);
+  font-size: 10px;
+  font-weight: 600;
+  font-family: var(--font-main);
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+.gameTitle {
+  color: var(--color-text-primary);
+  font-size: 18px;
+  font-weight: 700;
+  font-family: var(--font-main);
+  margin: 0;
+}
+.streakBadge {
+  background: #fff8e6;
+  border: 1px solid #e8c84a;
+  border-radius: 20px;
+  color: var(--color-accent);
+  font-size: 12px;
+  font-weight: 600;
+  font-family: var(--font-main);
+  padding: 5px 12px;
+  align-self: flex-start;
+}
+
+/* ── Color Match ── */
+.colorName {
+  color: var(--color-text-primary);
+  font-size: 20px;
+  font-weight: 700;
+  font-family: var(--font-main);
+  text-align: center;
+}
+.colorGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.colorTile {
+  aspect-ratio: 1;
+  border-radius: 16px;
+  border: 2.5px solid transparent;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.15s, border-color 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.colorTile:hover { transform: scale(1.05); }
+.colorTile:active { transform: scale(0.95); }
+.tileCorrect { border-color: #5a9e6f !important; transform: scale(0.95); }
+.tileWrong { border-color: #c0534a !important; transform: scale(0.95); }
+.tileIcon { color: #fff; font-size: 22px; font-weight: 700; text-shadow: 0 1px 3px rgba(0,0,0,0.3); }
+.feedbackRow { min-height: 32px; display: flex; align-items: center; justify-content: center; }
+.feedbackCorrect { color: #5a9e6f; font-size: 13px; font-weight: 600; font-family: var(--font-main); text-align: center; }
+.feedbackWrongRow { display: flex; align-items: center; gap: 10px; }
+.feedbackWrong { color: var(--color-text-secondary); font-size: 12px; font-family: var(--font-main); }
+.smallBtn {
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  color: var(--color-text-secondary);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 12px;
+  cursor: pointer;
+  font-family: var(--font-main);
+}
+.smallBtn:hover { border-color: var(--color-accent); color: var(--color-accent); }
+
+/* ── Calm Words ── */
+.answerRow { display: flex; justify-content: center; gap: 6px; flex-wrap: wrap; }
+.answerSlot {
+  width: 36px; height: 40px;
+  border-radius: 8px;
+  border: 2px solid var(--color-border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 15px; font-weight: 700; font-family: var(--font-main);
+  color: var(--color-text-primary);
+  transition: all 0.15s;
+}
+.slotEmpty { background: var(--color-bg); }
+.slotFilled { background: #fff8e6; border-color: var(--color-accent); color: var(--color-accent); }
+.slotSolved { background: #e8f5ec; border-color: #5a9e6f; color: #5a9e6f; }
+.letterGrid { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.letterTile {
+  width: 40px; height: 40px;
+  border-radius: 10px;
+  border: 2px solid var(--color-accent);
+  background: #fff8e6;
+  color: var(--color-accent);
+  font-size: 15px; font-weight: 700; font-family: var(--font-main);
+  cursor: pointer;
+  transition: all 0.15s;
+  display: flex; align-items: center; justify-content: center;
+}
+.letterTile:hover { background: var(--color-accent); color: #fff; }
+.letterTile:active { transform: scale(0.9); }
+.letterUsed { background: var(--color-surface); border-color: var(--color-border); color: var(--color-text-muted); opacity: 0.5; cursor: default; }
+.wordControls { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.ghostBtn { background: none; border: none; color: var(--color-text-muted); font-size: 12px; font-weight: 500; font-family: var(--font-main); cursor: pointer; padding: 4px 8px; }
+.ghostBtn:hover { color: var(--color-accent); }
+.ghostBtn:disabled { opacity: 0.3; cursor: default; }
+
+/* ── Tab picker ── */
+.tabRow { display: flex; gap: 8px; margin-bottom: 16px; overflow-x: auto; padding-bottom: 2px; }
+.tab {
+  flex-shrink: 0;
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-border);
+  border-radius: 20px;
+  color: var(--color-text-secondary);
+  font-size: 12px; font-weight: 500; font-family: var(--font-main);
+  padding: 7px 14px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.tabActive { background: var(--color-accent); border-color: var(--color-accent); color: #fff; font-weight: 600; }
+
+/* ── Memory Tiles ── */
+.memoryGrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.memoryTile {
+  aspect-ratio: 1;
+  border-radius: 10px;
+  border: 2px solid var(--color-border);
+  background: var(--color-surface);
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex; align-items: center; justify-content: center;
+}
+.memoryTile:hover { border-color: var(--color-accent); }
+.memoryTileFlipped { background: #fff8e6; border-color: var(--color-accent); }
+.memoryTileMatched { background: #e8f5ec; border-color: #5a9e6f; opacity: 0.7; }
+
+/* ── Gratitude Flash ── */
+.gratitudePromptBox { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 16px; }
+.gratitudePrompt { color: var(--color-text-primary); font-size: 15px; font-family: var(--font-main); font-weight: 500; line-height: 1.6; margin: 0; }
+.gratitudeInput {
+  width: 100%;
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-primary);
+  font-size: 14px; font-family: var(--font-main);
+  padding: 12px 14px;
+  resize: none; outline: none; line-height: 1.6;
+}
+.gratitudeInput:focus { border-color: var(--color-accent); }
+.gratitudeInput::placeholder { color: var(--color-text-muted); }
+.nextBtn {
+  background: var(--color-accent);
+  border: none;
+  border-radius: var(--radius-md);
+  color: #fff;
+  font-size: 13px; font-weight: 600; font-family: var(--font-main);
+  padding: 10px 16px;
+  cursor: pointer;
+}
+.nextBtn:disabled { background: var(--color-border); color: var(--color-text-muted); cursor: default; }
+
+/* ── Grounding Game ── */
+.gs2Dots { display: flex; gap: 8px; justify-content: center; }
+.gs2Dot { width: 8px; height: 8px; border-radius: 50%; background: var(--color-border); }
+.gs2DotActive { background: var(--color-accent); }
+.gs2DotDone { background: #5a9e6f; }
+.gs2Num { color: var(--color-accent); font-size: 52px; font-weight: 700; font-family: var(--font-main); text-align: center; line-height: 1; }
+.gs2Sense { color: var(--color-text-muted); font-size: 11px; font-weight: 600; font-family: var(--font-main); letter-spacing: 0.6px; text-transform: uppercase; text-align: center; }
+.gs2Prompt { color: var(--color-text-secondary); font-size: 14px; font-family: var(--font-main); line-height: 1.6; text-align: center; }
+.gs2Input {
+  width: 100%;
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-primary);
+  font-size: 14px; font-family: var(--font-main);
+  padding: 12px 14px; outline: none;
+}
+.gs2Input:focus { border-color: var(--color-accent); }
+.gs2Input::placeholder { color: var(--color-text-muted); }

@@ -1,0 +1,124 @@
+{
+  "nervous-system-regulation": {
+    "title": "Understanding Your Nervous System",
+    "summary": "Learn about Understanding Your Nervous System",
+    "body": "Content coming soon.",
+    "signs": [],
+    "strategies": [],
+    "link": "https://aminuteformentalhealth.ca/articles/nervous-system-regulation"
+  },
+  "sensory-regulation": {
+    "title": "Sensory Regulation",
+    "summary": "Managing how your body responds to the world around you during periods of stress.",
+    "what": "Sensory regulation is the process of managing how your body responds to the sights, sounds, smells, textures, temperatures, and environments around you. Our senses constantly send information to our brain. When we are calm and regulated, we can usually process this information without difficulty. However, during periods of stress, anxiety, burnout, or emotional overload, our nervous system can become more sensitive to sensory input. Things that may not normally bother us — such as bright lights, loud noises, crowded spaces, or constant notifications — can suddenly feel overwhelming.",
+    "why": "When sensory overload occurs, it can increase feelings of stress, anxiety, irritability, and exhaustion. Learning how to manage sensory input can help reduce overwhelm and improve focus, emotional regulation, and overall wellbeing.",
+    "signs": [
+      "Feeling overwhelmed in busy environments",
+      "Becoming irritated by noise or distractions",
+      "Difficulty concentrating",
+      "Feeling mentally exhausted after social interactions",
+      "Increased anxiety in crowded places",
+      "Wanting to withdraw or isolate"
+    ],
+    "strategies": [
+      "Reduce screen brightness",
+      "Use noise-cancelling headphones",
+      "Move to a quieter environment",
+      "Listen to calming music",
+      "Take short sensory breaks throughout the day",
+      "Limit unnecessary notifications"
+    ],
+    "link": "https://aminuteformentalhealth.ca/articles/sensory-regulation"
+  },
+  "self-compassion": {
+    "title": "Self-Compassion",
+    "summary": "Treating yourself with the same kindness you would offer someone you care about.",
+    "what": "Self-compassion means treating yourself with the same kindness, patience, and understanding that you would offer to someone you care about. Many people are compassionate toward others but become highly critical of themselves when they make mistakes, experience setbacks, or struggle emotionally. Self-compassion does not mean avoiding responsibility or making excuses. Instead, it means recognizing that being human involves challenges, imperfections, and difficult emotions.",
+    "why": "Research shows that self-compassion can help reduce stress, anxiety, and burnout while improving emotional resilience and overall wellbeing. When people respond to themselves with understanding rather than harsh criticism, they are often better able to learn, grow, and recover from difficult experiences.",
+    "signs": [
+      "Constant self-criticism",
+      "Feeling like you're never doing enough",
+      "Comparing yourself to others",
+      "Difficulty forgiving mistakes",
+      "Feeling guilty for resting",
+      "Believing your worth depends on productivity"
+    ],
+    "strategies": [
+      "Ask yourself: if a friend were going through this situation, what would I say to them?",
+      "Consider whether you can offer yourself that same understanding",
+      "Notice when your inner voice becomes critical and gently redirect it",
+      "Give yourself permission to be imperfect"
+    ],
+    "link": "https://aminuteformentalhealth.ca/articles/self-compassion"
+  },
+  "burnout-education": {
+    "title": "Understanding Burnout",
+    "summary": "Burnout is more than feeling tired. Here is how to recognize it early.",
+    "what": "Burnout is a state of physical, mental, and emotional exhaustion caused by prolonged stress. It often develops gradually over time when demands consistently exceed a person's ability to recover. Burnout can affect work performance, relationships, physical health, and emotional wellbeing. Burnout is not simply feeling tired after a busy week — it is a deeper state of depletion that can make everyday responsibilities feel difficult to manage.",
+    "why": "Many people don't recognize burnout until they are already struggling significantly. Understanding the early warning signs can help people seek support and make adjustments before reaching a crisis point. Stress often feels like having too much to do. Burnout often feels like having nothing left to give.",
+    "signs": [
+      "Constant fatigue",
+      "Emotional exhaustion",
+      "Difficulty concentrating",
+      "Feeling disconnected from work or life",
+      "Irritability",
+      "Lack of motivation",
+      "Increased cynicism",
+      "Difficulty recovering after time off"
+    ],
+    "strategies": [
+      "Prioritize rest and recovery",
+      "Set realistic boundaries",
+      "Take regular breaks",
+      "Seek support from trusted people",
+      "Practice self-compassion",
+      "Reconnect with activities that provide meaning"
+    ],
+    "link": "https://aminuteformentalhealth.ca/articles/burnout-education"
+  },
+  "reset-planning": {
+    "title": "Reset Planning",
+    "summary": "Creating a simple plan for managing stress before it becomes overwhelming.",
+    "what": "Reset planning involves creating a personalized plan for managing stress before it becomes overwhelming. Many people wait until they are already exhausted, anxious, or burned out before taking action. Having a plan in place makes it easier to recognize warning signs early and respond with healthy coping strategies. During stressful moments, it can be difficult to think clearly or decide what to do next. A reset plan provides a simple roadmap that helps guide you back toward stability and support.",
+    "why": "When we plan ahead for difficult moments, we remove the need to make decisions under pressure. A reset plan means you already know what helps — so you can act on it faster.",
+    "signs": [
+      "What are your early warning signs?",
+      "What activities help you feel grounded?",
+      "Who can you reach out to for support?",
+      "What environments help you feel calm?",
+      "What boundaries may need strengthening?"
+    ],
+    "strategies": [
+      "Taking a walk",
+      "Practicing deep breathing",
+      "Listening to music",
+      "Journaling",
+      "Talking with a friend",
+      "Taking a short break"
+    ],
+    "link": "https://aminuteformentalhealth.ca/articles/reset-planning"
+  },
+  "recovery-rest": {
+    "title": "Recovery & Rest",
+    "summary": "Rest is not a reward. It is a basic human need.",
+    "what": "Recovery is the process of allowing your mind and body time to recharge after periods of stress, pressure, or emotional strain. While rest is important, recovery goes beyond simply sleeping or taking time off. Recovery includes activities that restore physical energy, emotional wellbeing, and mental clarity. Many people believe they need to earn rest through productivity. In reality, rest is a basic human need. Without adequate recovery, stress can accumulate over time and increase the risk of burnout, emotional exhaustion, and mental health challenges.",
+    "why": "You do not need to earn rest. Rest is productive because it allows you to care for yourself and restore your capacity to handle life's demands.",
+    "signs": [
+      "Constant fatigue",
+      "Feeling emotionally drained",
+      "Increased irritability",
+      "Difficulty focusing",
+      "Lack of motivation",
+      "Feeling disconnected"
+    ],
+    "strategies": [
+      "Spend time outdoors",
+      "Get adequate sleep",
+      "Move your body",
+      "Connect with supportive people",
+      "Take breaks from technology",
+      "Engage in hobbies you enjoy"
+    ],
+    "link": "https://aminuteformentalhealth.ca/articles/recovery-rest"
+  }
+}

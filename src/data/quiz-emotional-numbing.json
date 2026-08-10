@@ -1,0 +1,84 @@
+{
+  "id": "emotional-numbing",
+  "title": "Are you emotionally exhausted or emotionally disconnected?",
+  "intro": "Sometimes emotional overload doesn't feel intense anymore. It feels quiet. Flat. Disconnected. Emotional numbing can happen when your nervous system has been under stress for too long. This check-in is designed to help you understand how emotional exhaustion and disconnection may currently be affecting you.",
+  "questions": [
+    {
+      "text": "Lately, I feel:",
+      "options": [
+        { "letter": "a", "text": "Emotionally disconnected even while functioning normally" },
+        { "letter": "b", "text": "Withdrawn from people or conversations" },
+        { "letter": "c", "text": "Mentally absent or checked out" },
+        { "letter": "d", "text": "Emotionally shut down from exhaustion" },
+        { "letter": "e", "text": "Like I'm hiding how much I'm struggling internally" }
+      ]
+    },
+    {
+      "text": "When stress builds up, I usually:",
+      "options": [
+        { "letter": "a", "text": "Continue functioning while emotionally detached" },
+        { "letter": "b", "text": "Pull away from others emotionally" },
+        { "letter": "c", "text": "Zone out or mentally disconnect" },
+        { "letter": "d", "text": "Shut down internally from exhaustion" },
+        { "letter": "e", "text": "Pretend I'm okay even when I'm not" }
+      ]
+    },
+    {
+      "text": "Right now, I feel like:",
+      "options": [
+        { "letter": "a", "text": "I'm going through the motions emotionally" },
+        { "letter": "b", "text": "I need space away from people" },
+        { "letter": "c", "text": "I don't fully feel present mentally" },
+        { "letter": "d", "text": "Stress has drained my emotional energy" },
+        { "letter": "e", "text": "People don't fully see how overwhelmed I feel" }
+      ]
+    },
+    {
+      "text": "People around me probably see me as:",
+      "options": [
+        { "letter": "a", "text": "Functioning normally but quieter emotionally" },
+        { "letter": "b", "text": "Distant or withdrawn lately" },
+        { "letter": "c", "text": "Distracted or mentally elsewhere" },
+        { "letter": "d", "text": "Tired and emotionally drained" },
+        { "letter": "e", "text": "Calm on the outside" }
+      ]
+    },
+    {
+      "text": "What do you need most right now?",
+      "options": [
+        { "letter": "a", "text": "Emotional reconnection" },
+        { "letter": "b", "text": "Gentle support without pressure" },
+        { "letter": "c", "text": "Grounding and mental clarity" },
+        { "letter": "d", "text": "Deep rest and recovery" },
+        { "letter": "e", "text": "A safe space to be honest emotionally" }
+      ]
+    }
+  ],
+  "results": {
+    "a": {
+      "profile": "The Detached Functioner",
+      "description": "You are still functioning day-to-day, but emotionally disconnected from yourself and others. You show up — but part of you isn't fully there.",
+      "support": ["Emotional check-ins", "Grounding exercises", "Journaling prompts"]
+    },
+    "b": {
+      "profile": "The Quiet Withdrawer",
+      "description": "You pull away emotionally and socially when stress becomes overwhelming. Solitude feels safer than connection right now.",
+      "support": ["Grounding exercises", "Sensory regulation", "Nervous system regulation"]
+    },
+    "c": {
+      "profile": "The Mentally Checked-Out One",
+      "description": "You feel mentally absent, disconnected, or emotionally not fully there. Your mind has stepped back to protect you from overload.",
+      "support": ["Grounding exercises", "Breathing exercises", "Emotional check-ins"]
+    },
+    "d": {
+      "profile": "The Burnt-Out Numbness",
+      "description": "Long-term stress and exhaustion have turned into emotional shutdown. Your nervous system has been carrying too much for too long.",
+      "support": ["Recovery / rest reminders", "Nervous system regulation", "Reset planning"]
+    },
+    "e": {
+      "profile": "The Hidden Struggler",
+      "description": "You appear calm or okay externally while struggling internally. You carry a lot quietly — more than the people around you realize.",
+      "support": ["Journaling prompts", "Emotional check-ins", "Grounding exercises"]
+    }
+  }
+}

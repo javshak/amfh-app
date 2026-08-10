@@ -1,0 +1,84 @@
+{
+  "id": "burnout-patterns",
+  "title": "What does your burnout look like?",
+  "intro": "Burnout doesn't always mean completely falling apart. Sometimes it looks like losing motivation, feeling emotionally flat, or struggling to recover even after rest. This check-in is designed to help you recognize how burnout may currently be affecting you emotionally, mentally, and physically.",
+  "questions": [
+    {
+      "text": "Lately, I feel:",
+      "options": [
+        { "letter": "a", "text": "Physically and mentally exhausted but still functioning" },
+        { "letter": "b", "text": "Disconnected from motivation or emotions" },
+        { "letter": "c", "text": "Guilty when I try to slow down" },
+        { "letter": "d", "text": "Overwhelmed by how much I take on" },
+        { "letter": "e", "text": "Emotionally drained from constantly supporting others" }
+      ]
+    },
+    {
+      "text": "When responsibilities build up, I usually:",
+      "options": [
+        { "letter": "a", "text": "Continue pushing through exhaustion" },
+        { "letter": "b", "text": "Mentally check out or feel detached" },
+        { "letter": "c", "text": "Force myself to keep going no matter what" },
+        { "letter": "d", "text": "Say yes to more than I can realistically handle" },
+        { "letter": "e", "text": "Prioritize everyone else before myself" }
+      ]
+    },
+    {
+      "text": "Right now, I feel like:",
+      "options": [
+        { "letter": "a", "text": "Rest doesn't fully recharge me anymore" },
+        { "letter": "b", "text": "Things I used to care about feel harder to connect with" },
+        { "letter": "c", "text": "I don't know how to fully stop or rest" },
+        { "letter": "d", "text": "Too many people rely on me emotionally" },
+        { "letter": "e", "text": "I have very little energy left for myself" }
+      ]
+    },
+    {
+      "text": "People around me probably see me as:",
+      "options": [
+        { "letter": "a", "text": "Hardworking and productive" },
+        { "letter": "b", "text": "Quieter or less emotionally engaged lately" },
+        { "letter": "c", "text": "Constantly busy" },
+        { "letter": "d", "text": "Dependable and always available" },
+        { "letter": "e", "text": "Supportive to everyone around me" }
+      ]
+    },
+    {
+      "text": "What do you need most right now?",
+      "options": [
+        { "letter": "a", "text": "Real recovery time" },
+        { "letter": "b", "text": "Emotional reconnection" },
+        { "letter": "c", "text": "Permission to slow down" },
+        { "letter": "d", "text": "Stronger boundaries and balance" },
+        { "letter": "e", "text": "Support for yourself too" }
+      ]
+    }
+  ],
+  "results": {
+    "a": {
+      "profile": "The Running-on-Empty Worker",
+      "description": "You continue functioning and staying productive despite deep exhaustion. You show up every day — but your body and mind are asking for real rest.",
+      "support": ["Recovery / rest reminders", "Nervous system regulation", "Breathing exercises"]
+    },
+    "b": {
+      "profile": "The Emotionally Numb One",
+      "description": "You feel emotionally disconnected, flat, or detached from things you normally care about. This is your nervous system's way of protecting you from overload.",
+      "support": ["Emotional check-ins", "Sensory regulation", "Grounding exercises"]
+    },
+    "c": {
+      "profile": "The Constant Pusher",
+      "description": "You feel guilty slowing down and constantly push through stress or exhaustion. Rest feels unearned — but your nervous system needs it more than you know.",
+      "support": ["Burnout education", "Self-compassion prompts", "Breathing exercises"]
+    },
+    "d": {
+      "profile": "The Overcommitted Helper",
+      "description": "You take on too much responsibility and struggle setting limits with others. Your generosity is real — but it's costing you more than you can afford right now.",
+      "support": ["Self-compassion prompts", "Nervous system regulation", "Reset planning"]
+    },
+    "e": {
+      "profile": "The Exhausted Caregiver",
+      "description": "You spend most of your emotional energy supporting others while neglecting your own recovery. You give so much — it's time to receive some support too.",
+      "support": ["Emotional check-ins", "Recovery / rest reminders", "Grounding exercises"]
+    }
+  }
+}

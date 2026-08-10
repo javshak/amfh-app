@@ -1,0 +1,84 @@
+{
+  "id": "reset-recovery",
+  "title": "What kind of reset do you actually need right now?",
+  "intro": "Not everyone recharges the same way. Some people need quiet. Some need movement. Some need emotional release, connection, or structure. This check-in is designed to help you identify what type of recovery and nervous system support may help you feel more regulated right now.",
+  "questions": [
+    {
+      "text": "When I'm overwhelmed, I usually feel better through:",
+      "options": [
+        { "letter": "a", "text": "Movement or physical activity" },
+        { "letter": "b", "text": "Quiet and low-stimulation environments" },
+        { "letter": "c", "text": "Emotional reflection or processing" },
+        { "letter": "d", "text": "Talking with supportive people" },
+        { "letter": "e", "text": "Routines and structure" }
+      ]
+    },
+    {
+      "text": "When stress builds up, I usually need:",
+      "options": [
+        { "letter": "a", "text": "Movement to release tension" },
+        { "letter": "b", "text": "Calm spaces away from stimulation" },
+        { "letter": "c", "text": "Time to process emotions mentally" },
+        { "letter": "d", "text": "Connection and emotional support" },
+        { "letter": "e", "text": "Organization and stability" }
+      ]
+    },
+    {
+      "text": "Right now, my nervous system probably needs:",
+      "options": [
+        { "letter": "a", "text": "Grounding through movement" },
+        { "letter": "b", "text": "Deep rest and quiet" },
+        { "letter": "c", "text": "Emotional release and reflection" },
+        { "letter": "d", "text": "Reassurance and connection" },
+        { "letter": "e", "text": "Structure and predictability" }
+      ]
+    },
+    {
+      "text": "I feel most recharged when:",
+      "options": [
+        { "letter": "a", "text": "I've moved my body or released energy" },
+        { "letter": "b", "text": "Things feel calm and peaceful" },
+        { "letter": "c", "text": "I've had time to emotionally process things" },
+        { "letter": "d", "text": "I feel emotionally understood by others" },
+        { "letter": "e", "text": "I feel organized and back in control" }
+      ]
+    },
+    {
+      "text": "What do you need most right now?",
+      "options": [
+        { "letter": "a", "text": "Movement and grounding" },
+        { "letter": "b", "text": "Calm and nervous system rest" },
+        { "letter": "c", "text": "Emotional processing space" },
+        { "letter": "d", "text": "Support and connection" },
+        { "letter": "e", "text": "Structure and stability" }
+      ]
+    }
+  ],
+  "results": {
+    "a": {
+      "profile": "The Movement Resetter",
+      "description": "You feel more grounded and regulated through movement, activity, or physical release. Your body holds tension — and moving helps you let it go.",
+      "support": ["Grounding exercises", "Breathing exercises", "Reset planning"]
+    },
+    "b": {
+      "profile": "The Quiet Recharger",
+      "description": "You need calm, rest, and low-stimulation environments to recover emotionally. Quiet isn't avoidance for you — it's how you heal.",
+      "support": ["Sensory regulation", "Recovery / rest reminders", "Nervous system regulation"]
+    },
+    "c": {
+      "profile": "The Emotional Processor",
+      "description": "You need emotional expression, reflection, or connection to process stress. Putting feelings into words helps you move through them.",
+      "support": ["Journaling prompts", "Emotional check-ins", "Self-compassion prompts"]
+    },
+    "d": {
+      "profile": "The Social Recharger",
+      "description": "You feel restored through support, connection, and feeling understood by others. Being with people who get you helps you feel like yourself again.",
+      "support": ["Emotional check-ins", "Self-compassion prompts", "Journaling prompts"]
+    },
+    "e": {
+      "profile": "The Structured Recoverer",
+      "description": "You feel calmer with routines, structure, organization, and a sense of stability. When things feel predictable, your nervous system can finally relax.",
+      "support": ["Reset planning", "Burnout education", "Nervous system regulation"]
+    }
+  }
+}

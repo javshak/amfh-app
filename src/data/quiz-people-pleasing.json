@@ -1,0 +1,84 @@
+{
+  "id": "people-pleasing",
+  "title": "Do you carry too much for everyone else?",
+  "intro": "Some people become overwhelmed not because they aren't strong — but because they've spent too long carrying everything alone. People-pleasing and overfunctioning can make it difficult to recognize your own limits, needs, and exhaustion. This check-in is designed to help you understand how emotional overgiving may currently be affecting you.",
+  "questions": [
+    {
+      "text": "Lately, I feel:",
+      "options": [
+        { "letter": "a", "text": "Uncomfortable when people are upset with me" },
+        { "letter": "b", "text": "Emotionally responsible for others" },
+        { "letter": "c", "text": "Worried about disappointing people" },
+        { "letter": "d", "text": "Exhausted from constantly giving to others" },
+        { "letter": "e", "text": "Disconnected from my own needs and limits" }
+      ]
+    },
+    {
+      "text": "When people need help, I usually:",
+      "options": [
+        { "letter": "a", "text": "Avoid saying no to keep the peace" },
+        { "letter": "b", "text": "Take on their emotions as my own" },
+        { "letter": "c", "text": "Want reassurance that I'm helping enough" },
+        { "letter": "d", "text": "Give more than I realistically can" },
+        { "letter": "e", "text": "Put their needs before mine automatically" }
+      ]
+    },
+    {
+      "text": "Right now, I feel like:",
+      "options": [
+        { "letter": "a", "text": "I try too hard to avoid conflict" },
+        { "letter": "b", "text": "I carry too much emotional weight for others" },
+        { "letter": "c", "text": "I rely heavily on external validation" },
+        { "letter": "d", "text": "I've been emotionally overextending myself" },
+        { "letter": "e", "text": "I rarely prioritize myself fully" }
+      ]
+    },
+    {
+      "text": "People around me probably see me as:",
+      "options": [
+        { "letter": "a", "text": "Easygoing and accommodating" },
+        { "letter": "b", "text": "Emotionally supportive" },
+        { "letter": "c", "text": "Caring and approval-seeking" },
+        { "letter": "d", "text": "Always available to help" },
+        { "letter": "e", "text": "Selfless and dependable" }
+      ]
+    },
+    {
+      "text": "What do you need most right now?",
+      "options": [
+        { "letter": "a", "text": "Healthier boundaries around conflict" },
+        { "letter": "b", "text": "Emotional separation from other people's stress" },
+        { "letter": "c", "text": "Reassurance from yourself instead of others" },
+        { "letter": "d", "text": "Time to recover and recharge" },
+        { "letter": "e", "text": "Permission to prioritize yourself too" }
+      ]
+    }
+  ],
+  "results": {
+    "a": {
+      "profile": "The Peacekeeper",
+      "description": "You avoid conflict, tension, or disappointing others in order to keep things calm. Your need for harmony often comes at the cost of your own honest expression.",
+      "support": ["Self-compassion prompts", "Grounding exercises", "Journaling prompts"]
+    },
+    "b": {
+      "profile": "The Emotional Caretaker",
+      "description": "You feel responsible for managing or carrying other people's emotions. You absorb what others feel and often lose track of what you feel yourself.",
+      "support": ["Emotional check-ins", "Nervous system regulation", "Grounding exercises"]
+    },
+    "c": {
+      "profile": "The Approval Chaser",
+      "description": "You look for reassurance, validation, or external approval to feel secure. Your sense of worth is tied closely to how others respond to you.",
+      "support": ["Self-compassion prompts", "Emotional check-ins", "Journaling prompts"]
+    },
+    "d": {
+      "profile": "The Over-Giver",
+      "description": "You give too much emotionally, mentally, or physically without enough recovery. Your generosity is real — but it's depleting you.",
+      "support": ["Recovery / rest reminders", "Breathing exercises", "Reset planning"]
+    },
+    "e": {
+      "profile": "The Self-Abandoner",
+      "description": "You consistently ignore personal needs, limits, or emotional well-being for others. You have become so focused on others that you've lost touch with yourself.",
+      "support": ["Self-compassion prompts", "Grounding exercises", "Nervous system regulation"]
+    }
+  }
+}

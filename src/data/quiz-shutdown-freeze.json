@@ -1,0 +1,84 @@
+{
+  "id": "shutdown-freeze",
+  "title": "Is your nervous system shutting down from stress?",
+  "intro": "When stress becomes overwhelming, some nervous systems stop fighting and start shutting down. This can look like avoidance, exhaustion, procrastination, numbness, or feeling mentally stuck. This check-in is designed to help you understand how stress-related shutdown or freeze responses may currently be affecting you.",
+  "questions": [
+    {
+      "text": "Lately, I feel:",
+      "options": [
+        { "letter": "a", "text": "Frozen when trying to start things" },
+        { "letter": "b", "text": "Tempted to avoid stressful situations completely" },
+        { "letter": "c", "text": "Mentally stuck and unable to move forward" },
+        { "letter": "d", "text": "Emotionally and mentally exhausted" },
+        { "letter": "e", "text": "Overwhelmed internally while still trying to function" }
+      ]
+    },
+    {
+      "text": "When life feels stressful, I usually:",
+      "options": [
+        { "letter": "a", "text": "Procrastinate because starting feels overwhelming" },
+        { "letter": "b", "text": "Avoid dealing with things altogether" },
+        { "letter": "c", "text": "Overthink so much that I feel stuck" },
+        { "letter": "d", "text": "Mentally shut down from exhaustion" },
+        { "letter": "e", "text": "Quietly push through while struggling internally" }
+      ]
+    },
+    {
+      "text": "Right now, I feel like:",
+      "options": [
+        { "letter": "a", "text": "I don't know how to begin" },
+        { "letter": "b", "text": "Avoiding things feels easier than facing them" },
+        { "letter": "c", "text": "My brain feels trapped in stress" },
+        { "letter": "d", "text": "I need deep mental recovery" },
+        { "letter": "e", "text": "Everything feels heavy but I keep functioning anyway" }
+      ]
+    },
+    {
+      "text": "People around me probably see me as:",
+      "options": [
+        { "letter": "a", "text": "Struggling with motivation" },
+        { "letter": "b", "text": "Distant or avoidant lately" },
+        { "letter": "c", "text": "Mentally overwhelmed" },
+        { "letter": "d", "text": "Exhausted or drained" },
+        { "letter": "e", "text": "Quiet but still managing things" }
+      ]
+    },
+    {
+      "text": "What do you need most right now?",
+      "options": [
+        { "letter": "a", "text": "Gentle structure and small starting points" },
+        { "letter": "b", "text": "Emotional safety without pressure" },
+        { "letter": "c", "text": "Clarity and manageable next steps" },
+        { "letter": "d", "text": "Nervous system recovery and rest" },
+        { "letter": "e", "text": "Support without needing to explain everything" }
+      ]
+    }
+  ],
+  "results": {
+    "a": {
+      "profile": "The Frozen Starter",
+      "description": "You struggle beginning tasks and feel mentally frozen when overwhelmed. The first step often feels like the hardest part — and that's okay.",
+      "support": ["Reset planning", "Grounding exercises", "Self-compassion prompts"]
+    },
+    "b": {
+      "profile": "The Avoider",
+      "description": "You disconnect from stress or difficult emotions through avoidance. Stepping away can feel like the only way to cope when things feel like too much.",
+      "support": ["Grounding exercises", "Journaling prompts", "Nervous system regulation"]
+    },
+    "c": {
+      "profile": "The Mentally Stuck One",
+      "description": "You feel trapped mentally and struggle moving forward or making decisions. Your mind is working overtime trying to find a way through.",
+      "support": ["Grounding exercises", "Breathing exercises", "Reset planning"]
+    },
+    "d": {
+      "profile": "The Exhausted Shutdown",
+      "description": "Long-term stress has turned into mental and emotional exhaustion. Your system has been running on empty and is asking for real recovery.",
+      "support": ["Recovery / rest reminders", "Nervous system regulation", "Sensory regulation"]
+    },
+    "e": {
+      "profile": "The Quiet Survivor",
+      "description": "You are still functioning quietly while feeling deeply overwhelmed internally. You carry more than most people realize, and you deserve support too.",
+      "support": ["Emotional check-ins", "Journaling prompts", "Grounding exercises"]
+    }
+  }
+}

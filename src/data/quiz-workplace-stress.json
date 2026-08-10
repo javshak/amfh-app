@@ -1,0 +1,84 @@
+{
+  "id": "workplace-stress",
+  "title": "How is work stress showing up for you?",
+  "intro": "Work stress doesn't always stay at work. Sometimes it follows people home mentally, emotionally, and physically — especially in demanding environments where people are expected to keep functioning no matter how overwhelmed they feel. This check-in is designed to help you understand how workplace stress and burnout may currently be affecting you.",
+  "questions": [
+    {
+      "text": "Lately, work feels:",
+      "options": [
+        { "letter": "a", "text": "Mentally nonstop even outside of work hours" },
+        { "letter": "b", "text": "Emotionally heavy and draining" },
+        { "letter": "c", "text": "Exhausting but I keep pushing through" },
+        { "letter": "d", "text": "Overwhelming because others rely on me" },
+        { "letter": "e", "text": "Disconnected and hard to stay motivated in" }
+      ]
+    },
+    {
+      "text": "When work stress builds up, I usually:",
+      "options": [
+        { "letter": "a", "text": "Take stress home mentally and struggle turning work off" },
+        { "letter": "b", "text": "Absorb other people's emotions and tension" },
+        { "letter": "c", "text": "Continue functioning despite exhaustion" },
+        { "letter": "d", "text": "Ignore my own needs to keep everything running" },
+        { "letter": "e", "text": "Emotionally check out from work" }
+      ]
+    },
+    {
+      "text": "Right now, I feel like:",
+      "options": [
+        { "letter": "a", "text": "Work pressure follows me everywhere" },
+        { "letter": "b", "text": "My nervous system feels emotionally overloaded" },
+        { "letter": "c", "text": "I haven't fully rested in a long time" },
+        { "letter": "d", "text": "I'm carrying too much responsibility for others" },
+        { "letter": "e", "text": "I feel emotionally disconnected from work lately" }
+      ]
+    },
+    {
+      "text": "People around me probably see me as:",
+      "options": [
+        { "letter": "a", "text": "Constantly busy or always available" },
+        { "letter": "b", "text": "Emotionally supportive and dependable" },
+        { "letter": "c", "text": "Hardworking and productive" },
+        { "letter": "d", "text": "Responsible and holding everything together" },
+        { "letter": "e", "text": "Quieter or less engaged lately" }
+      ]
+    },
+    {
+      "text": "What do you need most right now?",
+      "options": [
+        { "letter": "a", "text": "Healthier work-life balance" },
+        { "letter": "b", "text": "Emotional decompression and recovery" },
+        { "letter": "c", "text": "Permission to rest and recharge" },
+        { "letter": "d", "text": "Less pressure and responsibility" },
+        { "letter": "e", "text": "Reconnection and mental reset" }
+      ]
+    }
+  ],
+  "results": {
+    "a": {
+      "profile": "The Always-On Employee",
+      "description": "You struggle disconnecting mentally from work and feel constantly \"on.\" Even off the clock, work has a way of staying present in your mind.",
+      "support": ["Reset planning", "Nervous system regulation", "Grounding exercises"]
+    },
+    "b": {
+      "profile": "The Emotional Sponge",
+      "description": "You absorb stress, tension, and emotions from workplace environments. It can be hard to tell which feelings are yours and which belong to others.",
+      "support": ["Emotional check-ins", "Sensory regulation", "Self-compassion prompts"]
+    },
+    "c": {
+      "profile": "The High Performer",
+      "description": "You push through exhaustion to maintain productivity and expectations. Your output stays high — but it's coming at a real cost.",
+      "support": ["Burnout education", "Recovery / rest reminders", "Breathing exercises"]
+    },
+    "d": {
+      "profile": "The Burnt-Out Leader",
+      "description": "You feel pressure holding everything together for others while overwhelmed internally. Leading others doesn't leave much room to take care of yourself.",
+      "support": ["Self-compassion prompts", "Nervous system regulation", "Reset planning"]
+    },
+    "e": {
+      "profile": "The Detached Worker",
+      "description": "You feel emotionally disconnected from work, motivation, or purpose. Something that used to feel meaningful may feel distant right now.",
+      "support": ["Journaling prompts", "Emotional check-ins", "Grounding exercises"]
+    }
+  }
+}

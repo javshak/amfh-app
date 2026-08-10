@@ -1,0 +1,84 @@
+{
+  "id": "anxiety-panic",
+  "title": "How does anxiety show up for you?",
+  "intro": "Anxiety doesn't always look like panic attacks. Sometimes it shows up as overthinking, physical tension, racing thoughts, irritability, or feeling unable to relax. This check-in is designed to help you recognize how anxiety may currently be affecting your thoughts, body, emotions, and nervous system.",
+  "questions": [
+    {
+      "text": "Lately, my mind feels:",
+      "options": [
+        { "letter": "a", "text": "Full of racing thoughts and overthinking" },
+        { "letter": "b", "text": "Constantly alert or on guard" },
+        { "letter": "c", "text": "Physically tense or overstimulated" },
+        { "letter": "d", "text": "Overwhelmed internally even if I seem calm outside" },
+        { "letter": "e", "text": "Uncomfortable whenever things become too quiet or still" }
+      ]
+    },
+    {
+      "text": "When stress shows up, I usually:",
+      "options": [
+        { "letter": "a", "text": "Overanalyze everything" },
+        { "letter": "b", "text": "Expect problems before they happen" },
+        { "letter": "c", "text": "Feel anxiety physically in my body" },
+        { "letter": "d", "text": "Panic internally while trying to hold it together" },
+        { "letter": "e", "text": "Distract myself to avoid slowing down" }
+      ]
+    },
+    {
+      "text": "Right now, I feel like:",
+      "options": [
+        { "letter": "a", "text": "My brain won't fully shut off" },
+        { "letter": "b", "text": "My nervous system is always scanning for stress" },
+        { "letter": "c", "text": "My body never fully relaxes" },
+        { "letter": "d", "text": "I'm carrying hidden panic internally" },
+        { "letter": "e", "text": "Stillness feels emotionally uncomfortable" }
+      ]
+    },
+    {
+      "text": "People around me probably see me as:",
+      "options": [
+        { "letter": "a", "text": "Thoughtful or stuck in my head" },
+        { "letter": "b", "text": "Highly aware or cautious" },
+        { "letter": "c", "text": "Restless or physically stressed" },
+        { "letter": "d", "text": "Calm on the outside" },
+        { "letter": "e", "text": "Constantly busy or distracted" }
+      ]
+    },
+    {
+      "text": "What do you need most right now?",
+      "options": [
+        { "letter": "a", "text": "Mental quiet" },
+        { "letter": "b", "text": "Reassurance and safety" },
+        { "letter": "c", "text": "Nervous system regulation" },
+        { "letter": "d", "text": "Emotional grounding" },
+        { "letter": "e", "text": "Permission to slow down" }
+      ]
+    }
+  ],
+  "results": {
+    "a": {
+      "profile": "The Overthinker",
+      "description": "You experience constant racing thoughts, mental spirals, and difficulty turning the brain off. Your mind works hard — sometimes too hard — and struggles to find quiet.",
+      "support": ["Breathing exercises", "Grounding exercises", "Sensory regulation"]
+    },
+    "b": {
+      "profile": "The Hyper-Alert Protector",
+      "description": "You are always scanning for problems, stress, or potential danger and struggle to fully relax. Your nervous system is stuck in high alert even when things are okay.",
+      "support": ["Nervous system regulation", "Sensory regulation", "Grounding exercises"]
+    },
+    "c": {
+      "profile": "The Physical Stress Carrier",
+      "description": "You carry anxiety physically through tension, discomfort, restlessness, or nervous system activation. Your body holds what your mind is processing.",
+      "support": ["Breathing exercises", "Sensory regulation", "Grounding exercises"]
+    },
+    "d": {
+      "profile": "The Internal Panicker",
+      "description": "You feel panic and overwhelm internally while appearing calm externally. You carry a lot quietly — more than most people around you realize.",
+      "support": ["Emotional check-ins", "Grounding exercises", "Breathing exercises"]
+    },
+    "e": {
+      "profile": "The Restless Escaper",
+      "description": "You avoid slowing down because stillness feels uncomfortable or emotionally overwhelming. Staying busy keeps you from having to sit with difficult feelings.",
+      "support": ["Sensory regulation", "Grounding exercises", "Nervous system regulation"]
+    }
+  }
+}

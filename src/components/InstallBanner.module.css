@@ -1,0 +1,83 @@
+.banner {
+  position: fixed;
+  bottom: 80px;
+  left: 12px;
+  right: 12px;
+  z-index: 200;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 4px 24px rgba(58, 48, 32, 0.15);
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+.iconWrap {
+  flex-shrink: 0;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.text {
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  color: var(--color-text-primary);
+  font-size: 13px;
+  font-weight: 600;
+  font-family: var(--font-main);
+  margin-bottom: 2px;
+}
+
+.sub {
+  color: var(--color-text-secondary);
+  font-size: 11px;
+  font-family: var(--font-main);
+  line-height: 1.4;
+}
+
+.sub strong {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.installBtn {
+  flex-shrink: 0;
+  background: var(--color-accent);
+  border: none;
+  border-radius: var(--radius-md);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: var(--font-main);
+  padding: 8px 16px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.installBtn:hover { background: var(--color-accent-hover); }
+
+.closeBtn {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px;
+  line-height: 1;
+}
+.closeBtn:hover { color: var(--color-text-primary); }

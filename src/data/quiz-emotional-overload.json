@@ -1,0 +1,84 @@
+{
+  "id": "emotional-overload",
+  "title": "How overwhelmed are you feeling right now?",
+  "intro": "Sometimes overwhelm doesn't look dramatic. Sometimes it looks like continuing to function while mentally carrying too much. This quick check-in is designed to help you understand how stress may be showing up for you right now — without judgment.",
+  "questions": [
+    {
+      "text": "Lately, my brain feels:",
+      "options": [
+        { "letter": "a", "text": "Constantly overloaded with responsibilities" },
+        { "letter": "b", "text": "Emotionally heavy and withdrawn" },
+        { "letter": "c", "text": "Focused on everyone else's needs" },
+        { "letter": "d", "text": "Stuck in overthinking and mental spirals" },
+        { "letter": "e", "text": "Exhausted but still constantly active" }
+      ]
+    },
+    {
+      "text": "When life gets overwhelming, I usually:",
+      "options": [
+        { "letter": "a", "text": "Try to juggle everything at once" },
+        { "letter": "b", "text": "Shut down internally or pull away" },
+        { "letter": "c", "text": "Focus on helping others first" },
+        { "letter": "d", "text": "Overanalyze everything" },
+        { "letter": "e", "text": "Keep functioning even when exhausted" }
+      ]
+    },
+    {
+      "text": "Right now, I feel like:",
+      "options": [
+        { "letter": "a", "text": "I'm carrying too much mentally" },
+        { "letter": "b", "text": "Small tasks feel emotionally draining" },
+        { "letter": "c", "text": "I can't stop taking care of everything around me" },
+        { "letter": "d", "text": "My nervous system can't fully relax" },
+        { "letter": "e", "text": "I haven't had a real break in a long time" }
+      ]
+    },
+    {
+      "text": "People around me probably see me as:",
+      "options": [
+        { "letter": "a", "text": "Constantly busy and dependable" },
+        { "letter": "b", "text": "Quieter or emotionally distant lately" },
+        { "letter": "c", "text": "Supportive and reliable for everyone else" },
+        { "letter": "d", "text": "Stressed or anxious" },
+        { "letter": "e", "text": "Productive even when overwhelmed" }
+      ]
+    },
+    {
+      "text": "What do you need most right now?",
+      "options": [
+        { "letter": "a", "text": "Less pressure and responsibility" },
+        { "letter": "b", "text": "Emotional support and space to breathe" },
+        { "letter": "c", "text": "Permission to focus on yourself too" },
+        { "letter": "d", "text": "Grounding and mental quiet" },
+        { "letter": "e", "text": "Rest without guilt" }
+      ]
+    }
+  ],
+  "results": {
+    "a": {
+      "profile": "The Overloaded Juggler",
+      "description": "You carry too many responsibilities at once and struggle to mentally slow down. Your mind is constantly in motion, managing tasks, people, and pressures that keep piling up.",
+      "support": ["Grounding exercises", "Nervous system regulation", "Breathing exercises"]
+    },
+    "b": {
+      "profile": "The Silent Shutdown",
+      "description": "You withdraw emotionally or mentally when overwhelm becomes too heavy. Your nervous system is protecting you — but you may need gentle support to reconnect.",
+      "support": ["Emotional check-ins", "Sensory regulation", "Journaling prompts"]
+    },
+    "c": {
+      "profile": "The Hyper-Responsible Helper",
+      "description": "You feel responsible for everyone else's needs and emotions. You give so much to others that your own needs often go unmet.",
+      "support": ["Breathing exercises", "Self-compassion prompts", "Grounding exercises"]
+    },
+    "d": {
+      "profile": "The Anxious Thinker",
+      "description": "You get stuck in overthinking, mental spirals, and nervous system overload. Your mind works hard — sometimes too hard — and struggles to find quiet.",
+      "support": ["Grounding exercises", "Nervous system regulation", "Sensory regulation"]
+    },
+    "e": {
+      "profile": "The Emotionally Drained Achiever",
+      "description": "You continue functioning and performing despite emotional exhaustion. You show up for everything and everyone — but you may be running on empty.",
+      "support": ["Recovery / rest reminders", "Emotional check-ins", "Breathing exercises"]
+    }
+  }
+}

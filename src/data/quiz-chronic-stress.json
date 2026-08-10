@@ -1,0 +1,84 @@
+{
+  "id": "chronic-stress",
+  "title": "How much stress have you been carrying lately?",
+  "intro": "Stress doesn't always hit all at once. Sometimes it slowly builds over time until your mind and body stop feeling fully rested. Chronic stress can affect emotional regulation, mental clarity, energy levels, and nervous system recovery. This check-in is designed to help you recognize how long-term stress accumulation may currently be affecting you.",
+  "questions": [
+    {
+      "text": "Lately, I feel:",
+      "options": [
+        { "letter": "a", "text": "Constantly carrying pressure and responsibilities" },
+        { "letter": "b", "text": "Emotionally overloaded most of the time" },
+        { "letter": "c", "text": "Exhausted but still functioning normally" },
+        { "letter": "d", "text": "Mentally overstimulated and unable to slow down" },
+        { "letter": "e", "text": "Like I haven't truly recovered in a long time" }
+      ]
+    },
+    {
+      "text": "When responsibilities pile up, I usually:",
+      "options": [
+        { "letter": "a", "text": "Keep carrying everything myself" },
+        { "letter": "b", "text": "Become emotionally overwhelmed" },
+        { "letter": "c", "text": "Continue pushing through exhaustion" },
+        { "letter": "d", "text": "Stay mentally \"on\" all the time" },
+        { "letter": "e", "text": "Ignore how badly I need rest and recovery" }
+      ]
+    },
+    {
+      "text": "Right now, I feel like:",
+      "options": [
+        { "letter": "a", "text": "The pressure never fully stops" },
+        { "letter": "b", "text": "My emotions feel overloaded lately" },
+        { "letter": "c", "text": "I've been functioning on low energy for too long" },
+        { "letter": "d", "text": "My nervous system cannot fully settle" },
+        { "letter": "e", "text": "I desperately need recovery and decompression" }
+      ]
+    },
+    {
+      "text": "People around me probably see me as:",
+      "options": [
+        { "letter": "a", "text": "Dependable and responsible" },
+        { "letter": "b", "text": "Emotionally stressed lately" },
+        { "letter": "c", "text": "Productive despite being tired" },
+        { "letter": "d", "text": "Constantly busy or overstimulated" },
+        { "letter": "e", "text": "Handling everything even when overwhelmed" }
+      ]
+    },
+    {
+      "text": "What do you need most right now?",
+      "options": [
+        { "letter": "a", "text": "Less pressure and responsibility" },
+        { "letter": "b", "text": "Emotional decompression" },
+        { "letter": "c", "text": "Rest without guilt" },
+        { "letter": "d", "text": "Calm and nervous system regulation" },
+        { "letter": "e", "text": "True recovery and time to reset" }
+      ]
+    }
+  ],
+  "results": {
+    "a": {
+      "profile": "The Constant Pressure Carrier",
+      "description": "You feel mentally weighed down by constant responsibilities and pressure. The load rarely lets up, even when you wish it would.",
+      "support": ["Reset planning", "Nervous system regulation", "Recovery / rest reminders"]
+    },
+    "b": {
+      "profile": "The Emotionally Overloaded One",
+      "description": "You feel emotionally full, overwhelmed, and mentally overloaded most of the time. There's a lot happening beneath the surface.",
+      "support": ["Emotional check-ins", "Journaling prompts", "Grounding exercises"]
+    },
+    "c": {
+      "profile": "The High-Functioning Exhausted Person",
+      "description": "You continue functioning and staying productive despite deep exhaustion. From the outside things look fine — but you know how tired you really are.",
+      "support": ["Recovery / rest reminders", "Breathing exercises", "Burnout education"]
+    },
+    "d": {
+      "profile": "The Mentally Overstimulated One",
+      "description": "You struggle finding mental quiet and feel constantly overstimulated. Slowing down can feel almost impossible right now.",
+      "support": ["Sensory regulation", "Nervous system regulation", "Grounding exercises"]
+    },
+    "e": {
+      "profile": "The Recovery-Deprived Person",
+      "description": "You haven't had enough emotional or nervous system recovery for a long time. Real rest — not just downtime — is what your system is asking for.",
+      "support": ["Recovery / rest reminders", "Reset planning", "Nervous system regulation"]
+    }
+  }
+}
