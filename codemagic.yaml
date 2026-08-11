@@ -5,12 +5,10 @@ workflows:
     instance_type: mac_mini_m2
 
     environment:
-      ios_signing:
-        distribution_type: app_store
-        bundle_identifier: com.aminuteformentalhealth.app
       vars:
         XCODE_WORKSPACE: ios/App/App.xcworkspace
         XCODE_SCHEME: App
+        BUNDLE_ID: com.aminuteformentalhealth.app
         APP_STORE_CONNECT_KEY_ID: $APP_STORE_CONNECT_KEY_ID
         APP_STORE_CONNECT_ISSUER_ID: $APP_STORE_CONNECT_ISSUER_ID
         APP_STORE_CONNECT_API_KEY: $APP_STORE_CONNECT_API_KEY
@@ -21,7 +19,7 @@ workflows:
         script: |
           keychain initialize
           app-store-connect fetch-signing-files \
-            com.aminuteformentalhealth.app \
+            $BUNDLE_ID \
             --type IOS_APP_STORE \
             --create
           keychain add-certificates
