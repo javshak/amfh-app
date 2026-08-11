@@ -7,7 +7,6 @@ workflows:
     environment:
       vars:
         XCODE_WORKSPACE: ios/App/App.xcworkspace
-        XCODE_SCHEME: App
         BUNDLE_ID: com.aminuteformentalhealth.app
         APP_STORE_CONNECT_KEY_ID: $APP_STORE_CONNECT_KEY_ID
         APP_STORE_CONNECT_ISSUER_ID: $APP_STORE_CONNECT_ISSUER_ID
@@ -47,11 +46,15 @@ workflows:
           cd ios/App
           pod install
 
+      - name: List schemes
+        script: |
+          xcodebuild -workspace "$XCODE_WORKSPACE" -list
+
       - name: Build iOS app
         script: |
           xcode-project build-ipa \
             --workspace "$XCODE_WORKSPACE" \
-            --config Release
+            --scheme App
 
     artifacts:
       - build/ios/ipa/*.ipa
