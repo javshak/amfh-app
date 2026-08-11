@@ -54,6 +54,8 @@ workflows:
             -scheme "$XCODE_SCHEME" \
             -configuration Release \
             -archivePath build/App.xcarchive \
+            CODE_SIGN_STYLE=Manual \
+            DEVELOPMENT_TEAM=$(app-store-connect list-certificates --type IOS_DISTRIBUTION --json | jq -r '.[0].attributes.teamId') \
             archive
 
       - name: Export IPA
