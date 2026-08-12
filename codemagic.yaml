@@ -22,7 +22,6 @@ workflows:
             --type IOS_APP_STORE \
             --create
           keychain add-certificates
-          xcode-project use-profiles
 
       - name: Install dependencies
         script: npm ci
@@ -46,11 +45,23 @@ workflows:
           cd ios/App
           pod install
 
-      - name: List schemes
-        script: |
-          xcodebuild -workspace "$XCODE_WORKSPACE" -list
-
       - name: Build iOS app
+        script: |
+          PROFILE_UUID=$(security find-identity -v -p codesigning | grep "Apple Distribution" | head -1 | awk '{print $2}')
+          TEAM_ID=$(app-store-connect list-certificates --type IOS_DISTRIBUTION --json | python3 -c "import sys,json; data=json.load(sys.stdin); print(data[0]['attributes']['teamId'])" 2>/dev/null || echo "")
+          
+          xcodebuild \
+            -workspace "$XCODE_WORKSPACE" \
+            -scheme App \
+            -configuration Release \
+            -archivePath build/ios/xcarchive/App.xcarchive \
+            CODE_SIGN_STYLE=Manual \
+            CODE_SIGN_IDENTITY="Apple Distribution" \
+            PROVISIONING_PROFILE_SPECIFIER="match AppStore $BUNDLE_ID" \
+            DEVELOPMENT_TEAM="$TEAM_ID" \
+            archive
+
+      - name: Export IPA
         script: |
           xcode-project build-ipa \
             --workspace "$XCODE_WORKSPACE" \
