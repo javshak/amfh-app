@@ -37,7 +37,7 @@ workflows:
 
       - name: Generate certificate key
         script: |
-          openssl ecparam -name prime256v1 -genkey -noout | openssl pkcs8 -topk8 -nocrypt > /tmp/cert_key.pem
+          openssl genrsa -out /tmp/cert_key.pem 2048
           echo "Certificate key generated"
 
       - name: Fetch signing files
