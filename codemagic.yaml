@@ -13,30 +13,11 @@ workflows:
       node: 20
 
     scripts:
-      - name: Set up keychain
-        script: keychain initialize
-
-      - name: Fetch signing files
-        script: |
-          app-store-connect fetch-signing-files $BUNDLE_ID \
-            --type IOS_APP_STORE \
-            --certificate-key $(openssl ecparam -name prime256v1 -genkey -noout | openssl pkcs8 -topk8 -nocrypt) \
-            --create
-
-      - name: Add certificates to keychain
-        script: keychain add-certificates
-
-      - name: Apply profiles to Xcode project
-        script: xcode-project use-profiles
-
       - name: Install dependencies
         script: npm ci
 
       - name: Build Vite app
         script: npm run build
-
-      - name: Install Capacitor CLI
-        script: npm install -g @capacitor/cli
 
       - name: Fix iOS deployment target
         script: |
@@ -50,6 +31,27 @@ workflows:
         script: |
           cd ios/App
           pod install
+
+      - name: Set up keychain
+        script: keychain initialize
+
+      - name: Generate certificate key
+        script: |
+          openssl ecparam -name prime256v1 -genkey -noout | openssl pkcs8 -topk8 -nocrypt > /tmp/cert_key.pem
+          echo "Certificate key generated"
+
+      - name: Fetch signing files
+        script: |
+          app-store-connect fetch-signing-files $BUNDLE_ID \
+            --type IOS_APP_STORE \
+            --certificate-key @file:/tmp/cert_key.pem \
+            --create
+
+      - name: Add certificates to keychain
+        script: keychain add-certificates
+
+      - name: Apply profiles to Xcode project
+        script: xcode-project use-profiles
 
       - name: Build iOS app
         script: |
