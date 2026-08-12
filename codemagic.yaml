@@ -5,26 +5,28 @@ workflows:
     instance_type: mac_mini_m2
 
     environment:
+      groups:
+        - default
       vars:
         XCODE_WORKSPACE: ios/App/App.xcworkspace
         BUNDLE_ID: com.aminuteformentalhealth.app
-        APP_STORE_CONNECT_KEY_IDENTIFIER: $APP_STORE_CONNECT_KEY_IDENTIFIER
-        APP_STORE_CONNECT_ISSUER_ID: $APP_STORE_CONNECT_ISSUER_ID
-        APP_STORE_CONNECT_PRIVATE_KEY: $APP_STORE_CONNECT_PRIVATE_KEY
       node: 20
 
     scripts:
-      - name: Set up code signing
+      - name: Set up keychain
+        script: keychain initialize
+
+      - name: Fetch signing files
         script: |
-          keychain initialize
-          app-store-connect fetch-signing-files \
-            $BUNDLE_ID \
+          app-store-connect fetch-signing-files $BUNDLE_ID \
             --type IOS_APP_STORE \
-            --issuer-id "$APP_STORE_CONNECT_ISSUER_ID" \
-            --key-id "$APP_STORE_CONNECT_KEY_IDENTIFIER" \
-            --private-key "$APP_STORE_CONNECT_PRIVATE_KEY" \
             --create
-          keychain add-certificates
+
+      - name: Add certificates to keychain
+        script: keychain add-certificates
+
+      - name: Apply profiles to Xcode project
+        script: xcode-project use-profiles
 
       - name: Install dependencies
         script: npm ci
