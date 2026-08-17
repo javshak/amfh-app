@@ -53,6 +53,14 @@ workflows:
       - name: Apply profiles to Xcode project
         script: xcode-project use-profiles
 
+      - name: Increment build number
+        script: |
+          cd ios/App
+          CURRENT=$(agvtool what-version -terse)
+          NEW=$((CURRENT + 1))
+          agvtool new-version -all $NEW
+          echo "Build number: $NEW"
+
       - name: Build iOS app
         script: |
           xcode-project build-ipa \
