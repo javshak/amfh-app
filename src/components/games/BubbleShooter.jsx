@@ -1,8 +1,8 @@
 import { useState, useRef, useCallback } from 'react'
 import s from './Games.module.css'
 
-const COLS = 11
-const ROWS = 8
+const COLS = 8
+const ROWS = 7
 const BUBBLE_COLORS = ['#E8A87C', '#7CBDE8', '#A8D8A8', '#D4A8D8', '#E8D07C', '#A8C8D8']
 const EMPTY = null
 
@@ -11,9 +11,8 @@ function randomColor() {
 }
 
 function initGrid() {
-  // Only fill top 5 rows to leave room for shooting
   return Array.from({ length: ROWS }, (_, r) =>
-    r < 5
+    r < 4
       ? Array.from({ length: r % 2 === 0 ? COLS : COLS - 1 }, () => randomColor())
       : Array.from({ length: r % 2 === 0 ? COLS : COLS - 1 }, () => EMPTY)
   )
@@ -72,7 +71,6 @@ export default function BubbleShooter() {
   const [score, setScore] = useState(0)
   const [won, setWon] = useState(false)
   const [lastPlaced, setLastPlaced] = useState(null)
-  const boardRef = useRef(null)
 
   const reset = useCallback(() => {
     setGrid(initGrid())
@@ -85,20 +83,13 @@ export default function BubbleShooter() {
 
   function handleBubbleClick(targetRow, targetCol) {
     if (won) return
-
-    // Find best empty neighbor of the clicked bubble
     const neighbors = getNeighbors(grid, targetRow, targetCol)
     const emptyNeighbors = neighbors.filter(([nr, nc]) => grid[nr]?.[nc] === EMPTY)
-
     if (emptyNeighbors.length === 0) return
-
-    // Pick the empty neighbor closest to bottom (to place naturally)
     const [bestRow, bestCol] = emptyNeighbors.sort((a, b) => b[0] - a[0])[0]
-
     const newGrid = grid.map(r => [...r])
     newGrid[bestRow][bestCol] = shooter
     setLastPlaced([bestRow, bestCol])
-
     const matches = findMatches(newGrid, bestRow, bestCol, shooter)
     if (matches.length >= 3) {
       for (const [r, c] of matches) newGrid[r][c] = EMPTY
@@ -110,7 +101,6 @@ export default function BubbleShooter() {
     } else {
       setGrid(newGrid)
     }
-
     setShooter(next)
     setNext(randomColor())
   }
@@ -136,45 +126,45 @@ export default function BubbleShooter() {
         </div>
       ) : (
         <>
-          <div
-            ref={boardRef}
-            style={{ position: 'relative', width: '100%', paddingBottom: `${(ROWS / COLS) * 100}%`, userSelect: 'none' }}
-          >
-            <div style={{ position: 'absolute', inset: 0 }}>
-              {grid.map((row, r) =>
-                row.map((color, c) => {
-                  const offset = r % 2 === 0 ? 0 : bubbleSize / 2
-                  const isLast = lastPlaced && lastPlaced[0] === r && lastPlaced[1] === c
-                  return (
-                    <div
-                      key={`${r}-${c}`}
-                      onClick={() => color !== EMPTY && handleBubbleClick(r, c)}
-                      style={{
-                        position: 'absolute',
-                        left: `${offset + c * bubbleSize}%`,
-                        top: `${r * bubbleSize}%`,
-                        width: `${bubbleSize}%`,
-                        paddingBottom: `${bubbleSize}%`,
-                        cursor: color !== EMPTY ? 'pointer' : 'default',
-                      }}
-                    >
-                      {color !== EMPTY && (
-                        <div style={{
+          {/* Board constrained to max 320px and centered */}
+          <div style={{ width: '100%', maxWidth: 320, margin: '0 auto' }}>
+            <div style={{ position: 'relative', width: '100%', paddingBottom: `${(ROWS / COLS) * 100}%`, userSelect: 'none' }}>
+              <div style={{ position: 'absolute', inset: 0 }}>
+                {grid.map((row, r) =>
+                  row.map((color, c) => {
+                    const offset = r % 2 === 0 ? 0 : bubbleSize / 2
+                    const isLast = lastPlaced && lastPlaced[0] === r && lastPlaced[1] === c
+                    return (
+                      <div
+                        key={`${r}-${c}`}
+                        onClick={() => color !== EMPTY && handleBubbleClick(r, c)}
+                        style={{
                           position: 'absolute',
-                          inset: '6%',
-                          borderRadius: '50%',
-                          background: color,
-                          boxShadow: isLast
-                            ? `0 0 0 2px white, 0 0 0 3px ${color}, inset -2px -2px 4px rgba(0,0,0,0.1)`
-                            : 'inset -2px -2px 4px rgba(0,0,0,0.1), inset 2px 2px 4px rgba(255,255,255,0.5)',
-                          transition: 'transform 0.1s',
-                          transform: isLast ? 'scale(1.1)' : 'scale(1)',
-                        }} />
-                      )}
-                    </div>
-                  )
-                })
-              )}
+                          left: `${offset + c * bubbleSize}%`,
+                          top: `${r * bubbleSize}%`,
+                          width: `${bubbleSize}%`,
+                          paddingBottom: `${bubbleSize}%`,
+                          cursor: color !== EMPTY ? 'pointer' : 'default',
+                        }}
+                      >
+                        {color !== EMPTY && (
+                          <div style={{
+                            position: 'absolute',
+                            inset: '6%',
+                            borderRadius: '50%',
+                            background: color,
+                            boxShadow: isLast
+                              ? `0 0 0 2px white, 0 0 0 3px ${color}, inset -2px -2px 4px rgba(0,0,0,0.1)`
+                              : 'inset -2px -2px 4px rgba(0,0,0,0.1), inset 2px 2px 4px rgba(255,255,255,0.5)',
+                            transition: 'transform 0.1s',
+                            transform: isLast ? 'scale(1.1)' : 'scale(1)',
+                          }} />
+                        )}
+                      </div>
+                    )
+                  })
+                )}
+              </div>
             </div>
           </div>
 

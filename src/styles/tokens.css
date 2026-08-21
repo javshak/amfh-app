@@ -10,6 +10,7 @@
   --color-accent:           #F5B20A;
   --color-accent-hover:     #d99e09;
   --color-accent-text:      #fff;
+  --color-card:             #F0EDE8;
   --font-main: 'Poppins', sans-serif;
   --radius-sm:  14px;
   --radius-md:  22px;
@@ -32,6 +33,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-#app-root {
+#root {
   zoom: var(--font-scale);
 }
+
+body.font-small  { zoom: 0.85; }
+body.font-medium { zoom: 1; }
+body.font-large  { zoom: 1.2; }
