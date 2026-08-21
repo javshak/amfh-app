@@ -55,11 +55,10 @@ workflows:
 
       - name: Increment build number
         script: |
-          cd ios/App
-          CURRENT=$(agvtool what-version -terse)
-          NEW=$((CURRENT + 1))
-          agvtool new-version -all $NEW
-          echo "Build number: $NEW"
+          BUILD_NUM=$(($(date +%s)))
+          sed -i '' "s/CURRENT_PROJECT_VERSION = [0-9]*/CURRENT_PROJECT_VERSION = $BUILD_NUM/g" ios/App/App.xcodeproj/project.pbxproj
+          sed -i '' "s/MARKETING_VERSION = [0-9.]*/MARKETING_VERSION = 1.0/g" ios/App/App.xcodeproj/project.pbxproj
+          echo "Build number set to: $BUILD_NUM"
 
       - name: Build iOS app
         script: |
