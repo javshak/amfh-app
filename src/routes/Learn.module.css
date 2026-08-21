@@ -95,7 +95,7 @@
 
 /* ── Quiz cards ── */
 .quizCard {
-  background: rgba(237, 230, 218, 0.85);
+  background: var(--color-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
   padding: 16px;
@@ -253,7 +253,7 @@
   margin-bottom: 28px;
 }
 .optionBtn {
-  background: rgba(237, 230, 218, 0.85);
+  background: var(--color-card);
   border: 1.5px solid var(--color-border);
   border-radius: var(--radius-sm);
   color: var(--color-text-primary);
@@ -376,7 +376,7 @@
   display: flex;
   align-items: center;
   gap: 14px;
-  background: rgba(237, 230, 218, 0.85);
+  background: var(--color-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
   padding: 16px;
@@ -537,7 +537,7 @@
   line-height: 1.6;
   padding: 8px 12px;
   margin-bottom: 6px;
-  background: rgba(237, 230, 218, 0.85);
+  background: var(--color-card);
   border-radius: var(--radius-sm);
   border-left: 3px solid var(--color-accent);
 }

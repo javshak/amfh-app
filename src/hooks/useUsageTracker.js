@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 
-//const WEEKLY_LIMIT_SECONDS = 2 * 60 * 60; // 2 hours
-const WEEKLY_LIMIT_SECONDS = 15 * 60; // 15 min for testing
+const WEEKLY_LIMIT_SECONDS = 2 * 60 * 60; // 2 hours
+//const WEEKLY_LIMIT_SECONDS = 55 * 60; // 15 min for testing
 const STORAGE_KEY = 'amfh_usage_v1';
 const PREMIUM_KEY = 'amfh_is_premium';
 

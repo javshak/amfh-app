@@ -122,3 +122,41 @@
   font-size: 0.8rem;
   margin-top: 8px;
 }
+
+.upgradeBlock {
+  margin-top: 8px;
+}
+
+.upgradeTitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #3a3020;
+  margin-bottom: 6px;
+}
+
+.upgradeText {
+  font-size: 0.9rem;
+  color: #7a6a52;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.upgradeBtn {
+  display: block;
+  width: 100%;
+  padding: 16px 24px;
+  border-radius: 14px;
+  border: none;
+  background: #c8960c;
+  color: #fffdf9;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  letter-spacing: 0.01em;
+}
+
+.upgradeBtn:active {
+  opacity: 0.85;
+}
